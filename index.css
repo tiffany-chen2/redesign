@@ -1,0 +1,86 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Playfair Display', serif; */
+
+.title {
+    font-size: 400%;
+    color: navy;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+.h2 {
+    font-size: 200%;
+    color:navy;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    padding-top: 0%;
+}
+
+.paragraph {
+    font-family: 'Playfair Display', serif;
+    color: rgb(75, 49, 29);
+    font-size: 100%;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.paragraphleft {
+    font-family: 'Playfair Display', serif;
+    color: rgb(75, 49, 29);
+    font-size: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: bolder;
+}
+
+.lists {
+    font-family: 'Playfair Display', serif;
+    color: rgb(75, 49, 29);
+    font-size: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.bottompadding{
+    padding-bottom: 4%;
+}
+
+.extrapadding {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.littlepadding {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.image-prov {
+    height: auto;
+    width: 500px;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container-row {
+    display: flex;
+    align-items: center;
+    justify-content: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
