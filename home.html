@@ -2,98 +2,79 @@
 
 <html>
   <head>
-    <title>Personas Project</title>
+    <title>Redesign Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Playfair+Display&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond&family=Poppins:wght@600&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <div class="center">
-      <h1 class="title">Personas & Storyboarding Project: TOASTER OVEN</h1>
+      <h1 class="title" style="padding-top: 50px;">Redesign Project: Taipei Metro</h1>
     </div>
 
     <div class="flex-container-col">
-      <div> <img style="width:700px;height:auto;" src="sideview.png"></div>
-      <div> <img class="image-prov" src="frontview.png"></div>
+      <div> <img style = "height: 800px; width:auto; margin-bottom: 0%" src="originalsite.png"></div>
+      <div><h2 style ="margin-top: 0; font-size:100%">ORIGINAL METRO WEBSITE</h2></div>
     </div>
 
     <div class="center, bottompadding">
-      <p class="paragraph">The purpose of a toaster oven is to offer a more compact, versatile, and efficient alternative 
-        to a regular oven, making it easier and more accessible for everyday use. Its key components are the two dials that 
-        control heat and time, which are labeled with increasing intervals that fit each function. These toaster ovens are 
-        typically found in homes and other living areas that may require a smaller substitute for large ovens, or are used 
-        by people who enjoy the convenience of a small toaster oven. Note: I chose this interface because I mainly stay
-         at home and we don't have many appliances and interfaces -- sorry!! :(</p>
+      <p class="paragraph">As I've lived in Taipei my whole life, I'm a frequent user of the Taipei Metro System. However, I've always thought that their website was badly designed because I can never navigate the tabs quickly to find the information I need. Here's my attempt at making this home page better! :)</p>
     </div>
 
-    <div class="center, extrapadding", style="background-color:#cbdcee;">
-      <h2 class="h2">Recorded Observations</h2>
-      <p class="paragraphleft">I interviewed my parents in person so they could interact with the toaster oven, 
-        and one friend over Zoom (I sent her pictures of the toaster and dials). I purposefully chose these people because 
-        they represented a range of age, gender, and socioeconomic demographics. During these interviews, I noticed:
+    <div class="center, extrapadding" style="background-color:#e4eefd;">
+      <h2 class="h2">1. Identifying Usability Problems</h2>
+      <h3 class="h3">Finding Problems</h3>
+      <p class="paragraphleft">In my opinion, the metro website doesn't have great usability standards. There is a lot of content crammed into the home page, making the page look a bit messy. 
       </p>
       <ul class="lists">
-        <li>All users instinctively knew how to use the toaster oven. My parents use it everyday, but my friend 
-          immediately knew how to set the time and heat dials, showing that comprehending these functions is universal</li>
-        <li>Everyone focused more on the time dial instead of the heat dial, and all adjusted the dials approximately 
-          instead of turning to exact values</li>
-        <li>The people who typically only use the toaster oven for breakfast (my dad and friend) rarely touched the heat 
-          dial and kept it on "low heat". In contrast, my mom uses the oven for all 3 meals of the day, and was more 
-          comfortable with adjusting the heat settings</li>
-        <li>Everyone enjoyed the practicality and simplicity of the toaster, but some wished for more complex functions
-        </li>
+        <li>Content: Information isn't efficiently displayed, as topics are often repeated in dropdown menus or are not critical to helping users ride the metro.</li>
+        <li>Visual Design: The website lacks visual complexity and nuance: the color palette is bland, there aren't many graphics, and there is no typeface hierarchy. </li>
+        <li>Layout: The page has lots of components (lists, menus, buttons), damaging the flow of the page. Users can't intuitively process information because of how spread out everything is -- they have to look for it instead.</li>
       </ul>
-    </div>
-
-    <div class="center, extrapadding", style="background-color:#f0e7d7;">
-      <h2 class="h2">Questions & Interviews</h2>
-      <p class="paragraphleft">Questions:</p>
-      <ol class="lists">
-        <li>When would you choose to use this toaster oven over another kitchen appliance, and for what purposes / types of cooking? 
-        </li>
-        <li>To what extent does its smaller size affect your reasons for using this appliance?</li>
-        <li>Do you think pulling the lever to open the toaster oven is efficient?</li>
-        <li>How effective do you think the dials are on a toaster oven, and is it easy to understand and use?</li>
-        <li>Which dial do you most frequently use and why?</li>
-        <li>Given how the dials are displayed, have you ever been confused by which dial to use, or do you ever reach
-           for the wrong dial? If so, how often in the past 2 weeks?</li>
-        <li>How effective is representing time and heat in the circular fashion of a dial?</li>
-        <li>Does seeing the whole range of increments of time and heat help you in using this toaster oven? Would you prefer 
-          to see these increments represented with a different visual design (linear scale, keypad)?</li>
-        <li>How many times in the past 2 weeks have you turned the dial inaccurately (not achieving the result you want)?</li>
-        <li>Can you suggest some improvements for this toaster, and what other functions would you want this toaster to have?</li>
-      </ol>
-      <p class="paragraphleft">Interview Responses:</p>
-      <img style="width:700px;height:auto;" src="flo.png", class = "center">
-      <img style="width:700px;height:auto;" src="mom.png", class = "center">
-      <img style="width:700px;height:auto;" src="dad.png", class = "center">
-    </div>
-
-    <div class="center, extrapadding", style="background-color:#e2f0d7;">
-      <h2 class="h2">Personas & Empathy Maps</h2>
-      <img style="width:700px;height:auto;" src="peggy.png", class = "center">
-      <br> <br>
-      <img style="width:700px;height:auto;" src="chris.png", class = "center">
-    </div>
-
-    <div class="center, extrapadding", style="background-color:#cfebe6;">
-      <h2 class="h2">Storyboard</h2>
-      <img style="width:850px;height:auto;" src="storyboard.png", class = "center">
-      <p class = "paragraph">This storyboard is written for Practical Peggy, and shows how she uses the toaster oven for dinner. After coming home from a tiring day from work, Peggy uses the toaster oven to quickly make pizzas and buffalo wings for her family. She can easily control the toaster to make these simple recipes, so the toaster is a practical and efficient solution to her dinner challenges. </p>
+      <img style="width:1000px;height:auto;" src="findingproblems.png", class = "center">
+      <h3 class="h3">Accessibility</h3>
+      <p class="paragraph">I used WAVE to evaluate the website for accessibility purposes:</p>
+      <img style="width:1000px;height:auto;" src="wave.png", class = "center">
+      <p class="paragraph">I used ChromeVox on Chrome for Screen Reading. The screen reader said, "Taipei rapid transit corporation box drawings light horizontal metro service tab". This isn't very clear and can be confusing for people relying on screen readers, as it doesn't talk about the title of the website or what the content entails.
+      </p>
     </div>
 
     <div class="center, extrapadding">
+      <h2 class="h2">2. Visual Redesign</h2>
+      <h3 class="h3">Low-Fidelity Wireframing</h3>
+      <p class="paragraph">I used Balsamiq to create my lowfi wireframes. Below are the annotated versions:</p>
+      <img style="width:700px;height:auto;" src="lowfi1.png", class = "center">
+      <br> <br>
+      <img style="width:700px;height:auto;" src="lowfi2.png", class = "center">
+      <br> <br>
+      <img style="width:700px;height:auto;" src="lowfi3.png", class = "center">
+      <br>
+      <br>
+      <h3 class="h3">High-Fidelity Prototyping</h3>
+      <p class="paragraph">I used AdobeXD for my highfi prototypes. I focused on colors, typeface hierarchy, and creating a good layout with flex.</p>
+      <img style="width:700px;height:auto;" src="hifi1.png", class = "center">
+      <br> <br>
+      <img style="width:700px;height:auto;" src="hifi2.png", class = "center">
+      <br> <br>
+      <img style="width:700px;height:auto;" src="hifi3.png", class = "center">
+      <br>
+      <br>
+      <h3 class="h3">Visual Design Style Guide</h3>
+      <img style="width:1000px;height:auto;" src="styleguide.png", class = "center">
+    </div>
+
+    <div class="center, extrapadding", style="background-color:#cfebe6;">
+      <h2 class="h2">3. Responsive Redesign</h2>
+      <a style="background-color: navy;" href="metrohomepage.html" target="_blank" class="second-btn text-light btn-lg mt-3 ml-3">Redesigned Metro Page</a>
+      <p class = "paragraph"> <br>I used flex to create most of my layout structures, so it was easy to wrap the elements as the page resized. This successfully worked when I tried the website on all 3 screen sizes in Developer Tools. I also changed the font size of my Mac to the large version, and the website still showed up the same! Coding a responsive website has taught me to consider more nuances in coding, and was super interesting!</p>
+    </div>
+
+    <div class="center, extrapadding text-center">
       <h2 class="h2">References & Image Citations</h2>
-      <p class = "paragraphleft">I used Canva to create the empathy maps and the storyboard, and also used the following images:</p>
-      <ul class="lists">
-        <li>Peggy: https://image.freepik.com/free-vector/casual-woman-character-set_1893-1861.jpg</li>
-        <li>Sarah: https://www.vectorstock.com/royalty-free-vector/teenager-girl-character-constructor-creation-set-vector-18931086</li>
-        <li>Office Background: http://www.vectorpicker.com/office-interior-clip-art_271714_36.html
-        </li>
-      </ul>
+      <p class = "paragraphleft">I used Canva to create some graphics, and got the rest of the images from the original Metro website.</p>
     </div>
 
   </body>

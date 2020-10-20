@@ -1,0 +1,677 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Taipei Metro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alatsi&family=Bebas+Neue&family=Fjalla+One&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+        <a class="navbar-brand" href="#">
+            <img src="metrologo.png" width="150" height=auto alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-lg-none ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Language</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                            <a class="dropdown-item" href="#">Taiwanese</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#127760; Language</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Chinese</a>
+                            <a class="dropdown-item" href="#">Taiwanese</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center align-items-center"
+        style="background-color: #0084ff">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-center align-items-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigationlink" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="font-size: 1.5rem; font-family: 'Alatsi', sans-serif; color: white; margin-left: 2rem;">
+                        MAPS & TIMETABLES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Route Map</a>
+                        <a class="dropdown-item" href="#">Timetable</a>
+                        <a class="dropdown-item" href="#">First & Last Trains</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigationlink" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="font-size: 1.5rem; font-family: 'Alatsi', sans-serif; color: white; margin-left: 2rem;">
+                        METRO GUIDE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Metro Services</a>
+                        <a class="dropdown-item" href="#">Fare & Travel Time Information</a>
+                        <a class="dropdown-item" href="#">Train Transfers</a>
+                        <a class="dropdown-item" href="#">Metro Tickets & Travel Passes</a>
+                        <a class="dropdown-item" href="#">Metro FAQ & Etiquette</a>
+                        <a class="dropdown-item" href="#">Safety Guide & Facilities</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navigationlink" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="font-size: 1.5rem; font-family: 'Alatsi', sans-serif; color: white; margin-left: 2rem;">
+                        PASSENGER SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lockers & Facilities</a>
+                        <a class="dropdown-item" href="#">Facilities for the Disabled</a>
+                        <a class="dropdown-item" href="#">Wireless Network</a>
+                        <a class="dropdown-item" href="#">Metro Community Page</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="navigationlink" href="#"
+                        style="font-size: 1.5rem; font-family: 'Alatsi', sans-serif; margin-left: 2rem;">BUS SERVICES <span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="banner1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="banner3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div>
+        <form style="
+        padding: 20px;
+        text-align: center;
+        background-color: #0f2563;
+        color:white;">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group" style="margin-left:1rem">
+                        <label for="exampleFormControlSelect1">From:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <optgroup _ngcontent-dnq-c26="" class="lineBR__bg" label="BR Wenhu Line">
+                                <option _ngcontent-dnq-c26="" value="019">BR01 Taipei Zoo</option>
+                                <option _ngcontent-dnq-c26="" value="018">BR02 Muzha</option>
+                                <option _ngcontent-dnq-c26="" value="017">BR03 Wanfang Community</option>
+                                <option _ngcontent-dnq-c26="" value="016">BR04 Wanfang Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="015">BR05 Xinhai</option>
+                                <option _ngcontent-dnq-c26="" value="014">BR06 Linguang</option>
+                                <option _ngcontent-dnq-c26="" value="013">BR07 Liuzhangli</option>
+                                <option _ngcontent-dnq-c26="" value="012">BR08 Technology Building</option>
+                                <option _ngcontent-dnq-c26="" value="011">BR09 Daan</option>
+                                <option _ngcontent-dnq-c26="" value="010">BR10 Zhongxiao Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="009">BR11 Nanjing Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="008">BR12 Zhongshan Junior High School</option>
+                                <option _ngcontent-dnq-c26="" value="007">BR13 Songshan Airport</option>
+                                <option _ngcontent-dnq-c26="" value="021">BR14 Dazhi</option>
+                                <option _ngcontent-dnq-c26="" value="022">BR15 Jiannan Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="023">BR16 Xihu</option>
+                                <option _ngcontent-dnq-c26="" value="024">BR17 Gangqian</option>
+                                <option _ngcontent-dnq-c26="" value="025">BR18 Wende</option>
+                                <option _ngcontent-dnq-c26="" value="026">BR19 Neihu</option>
+                                <option _ngcontent-dnq-c26="" value="027">BR20 Dahu Park</option>
+                                <option _ngcontent-dnq-c26="" value="028">BR21 Huzhou</option>
+                                <option _ngcontent-dnq-c26="" value="029">BR22 Donghu</option>
+                                <option _ngcontent-dnq-c26="" value="030">BR23 Nangang Software Park</option>
+                                <option _ngcontent-dnq-c26="" value="031">BR24 Taipei Nangang Exhibition Center</option>
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineR__bg" label="R Tamsui-Xinyi Line">
+                                <option _ngcontent-dnq-c26="" value="099">R02 Xiangshan</option>
+                                <option _ngcontent-dnq-c26="" value="100">R03 Taipei 101/World Trade Center</option>
+                                <option _ngcontent-dnq-c26="" value="101">R04 Xinyi Anhe</option>
+                                <option _ngcontent-dnq-c26="" value="011">R05 Daan</option>
+                                <option _ngcontent-dnq-c26="" value="103">R06 Daan Park</option>
+                                <option _ngcontent-dnq-c26="" value="134">R07 Dongmen</option>
+                                <option _ngcontent-dnq-c26="" value="042">R08 C.K.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="050">R09 NTU Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="051">R10 Taipei Main Station</option>
+                                <option _ngcontent-dnq-c26="" value="053">R11 Zhongshan</option>
+                                <option _ngcontent-dnq-c26="" value="054">R12 Shuanglian</option>
+                                <option _ngcontent-dnq-c26="" value="055">R13 Minquan W. Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="056">R14 Yuanshan</option>
+                                <option _ngcontent-dnq-c26="" value="057">R15 Jiantan</option>
+                                <option _ngcontent-dnq-c26="" value="058">R16 Shilin</option>
+                                <option _ngcontent-dnq-c26="" value="059">R17 Zhishan</option>
+                                <option _ngcontent-dnq-c26="" value="060">R18 Mingde</option>
+                                <option _ngcontent-dnq-c26="" value="061">R19 Shipai</option>
+                                <option _ngcontent-dnq-c26="" value="062">R20 Qilian</option>
+                                <option _ngcontent-dnq-c26="" value="063">R21 Qiyan</option>
+                                <option _ngcontent-dnq-c26="" value="064">R22 Beitou</option>
+                                <option _ngcontent-dnq-c26="" value="065">R22A Xinbeitou</option>
+                                <option _ngcontent-dnq-c26="" value="066">R23 Fuxinggang</option>
+                                <option _ngcontent-dnq-c26="" value="067">R24 Zhongyi</option>
+                                <option _ngcontent-dnq-c26="" value="068">R25 Guandu</option>
+                                <option _ngcontent-dnq-c26="" value="069">R26 Zhuwei</option>
+                                <option _ngcontent-dnq-c26="" value="070">R27 Hongshulin</option>
+                                <option _ngcontent-dnq-c26="" value="071">R28 Tamsui</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineG__bg" label="G Songshan-Xindian Line">
+                                <option _ngcontent-dnq-c26="" value="033">G01 Xindian</option>
+                                <option _ngcontent-dnq-c26="" value="034">G02 Xindian District Office</option>
+                                <option _ngcontent-dnq-c26="" value="035">G03 Qizhang</option>
+                                <option _ngcontent-dnq-c26="" value="032">G03A Xiaobitan</option>
+                                <option _ngcontent-dnq-c26="" value="036">G04 Dapinglin</option>
+                                <option _ngcontent-dnq-c26="" value="037">G05 Jingmei</option>
+                                <option _ngcontent-dnq-c26="" value="038">G06 Wanlong</option>
+                                <option _ngcontent-dnq-c26="" value="039">G07 Gongguan</option>
+                                <option _ngcontent-dnq-c26="" value="040">G08 Taipower Building</option>
+                                <option _ngcontent-dnq-c26="" value="041">G09 Guting</option>
+                                <option _ngcontent-dnq-c26="" value="042">G10 C.K.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="043">G11 Xiaonanmen</option>
+                                <option _ngcontent-dnq-c26="" value="086">G12 Ximen</option>
+                                <option _ngcontent-dnq-c26="" value="105">G13 Beimen</option>
+                                <option _ngcontent-dnq-c26="" value="053">G14 Zhongshan</option>
+                                <option _ngcontent-dnq-c26="" value="132">G15 Songjiang Nanjing</option>
+                                <option _ngcontent-dnq-c26="" value="009">G16 Nanjing Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="109">G17 Taipei Arena</option>
+                                <option _ngcontent-dnq-c26="" value="110">G18 Nanjing Sanmin</option>
+                                <option _ngcontent-dnq-c26="" value="111">G19 Songshan</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineO__bg" label="O Zhonghe-Xinlu Line">
+                                <option _ngcontent-dnq-c26="" value="048">O01 Nanshijiao</option>
+                                <option _ngcontent-dnq-c26="" value="047">O02 Jingan</option>
+                                <option _ngcontent-dnq-c26="" value="046">O03 Yongan Market</option>
+                                <option _ngcontent-dnq-c26="" value="045">O04 Dingxi</option>
+                                <option _ngcontent-dnq-c26="" value="041">O05 Guting</option>
+                                <option _ngcontent-dnq-c26="" value="134">O06 Dongmen</option>
+                                <option _ngcontent-dnq-c26="" value="089">O07 Zhongxiao Xinsheng</option>
+                                <option _ngcontent-dnq-c26="" value="132">O08 Songjiang Nanjing</option>
+                                <option _ngcontent-dnq-c26="" value="131">O09 Xingtian Temple </option>
+                                <option _ngcontent-dnq-c26="" value="130">O10 Zhongshan Elementary School</option>
+                                <option _ngcontent-dnq-c26="" value="055">O11 Minquan W. Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="128">O12 Daqiaotou</option>
+                                <option _ngcontent-dnq-c26="" value="127">O13 Taipei Bridge</option>
+                                <option _ngcontent-dnq-c26="" value="126">O14 Cailiao</option>
+                                <option _ngcontent-dnq-c26="" value="125">O15 Sanchong</option>
+                                <option _ngcontent-dnq-c26="" value="124">O16 Xianse Temple</option>
+                                <option _ngcontent-dnq-c26="" value="123">O17 Touqianzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="122">O18 Xinzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="121">O19 Fu Jen University</option>
+                                <option _ngcontent-dnq-c26="" value="180">O20 Danfeng</option>
+                                <option _ngcontent-dnq-c26="" value="179">O21 Huilong</option>
+                                <option _ngcontent-dnq-c26="" value="178">O50 Sanchong Elementary School</option>
+                                <option _ngcontent-dnq-c26="" value="177">O51 Sanhe Junior High School</option>
+                                <option _ngcontent-dnq-c26="" value="176">O52 St. Ignatius High School</option>
+                                <option _ngcontent-dnq-c26="" value="175">O53 Sanmin Senior High School</option>
+                                <option _ngcontent-dnq-c26="" value="174">O54 Luzhou</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineBL__bg" label="BL Bannan Line">
+                                <option _ngcontent-dnq-c26="" value="076">BL01 Dingpu</option>
+                                <option _ngcontent-dnq-c26="" value="077">BL02 Yongning</option>
+                                <option _ngcontent-dnq-c26="" value="078">BL03 Tucheng</option>
+                                <option _ngcontent-dnq-c26="" value="079">BL04 Haishan</option>
+                                <option _ngcontent-dnq-c26="" value="080">BL05 Far Eastern Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="081">BL06 Fuzhong</option>
+                                <option _ngcontent-dnq-c26="" value="082">BL07 Banqiao</option>
+                                <option _ngcontent-dnq-c26="" value="083">BL08 Xinpu</option>
+                                <option _ngcontent-dnq-c26="" value="084">BL09 Jiangzicui</option>
+                                <option _ngcontent-dnq-c26="" value="085">BL10 Longshan Temple</option>
+                                <option _ngcontent-dnq-c26="" value="086">BL11 Ximen</option>
+                                <option _ngcontent-dnq-c26="" value="051">BL12 Taipei Main Station</option>
+                                <option _ngcontent-dnq-c26="" value="088">BL13 Shandao Temple</option>
+                                <option _ngcontent-dnq-c26="" value="089">BL14 Zhongxiao Xinsheng</option>
+                                <option _ngcontent-dnq-c26="" value="010">BL15 Zhongxiao Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="091">BL16 Zhongxiao Dunhua</option>
+                                <option _ngcontent-dnq-c26="" value="092">BL17 S.Y.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="093">BL18 Taipei City Hall</option>
+                                <option _ngcontent-dnq-c26="" value="094">BL19 Yongchun</option>
+                                <option _ngcontent-dnq-c26="" value="095">BL20 Houshanpi</option>
+                                <option _ngcontent-dnq-c26="" value="096">BL21 Kunyang</option>
+                                <option _ngcontent-dnq-c26="" value="097">BL22 Nangang</option>
+                                <option _ngcontent-dnq-c26="" value="031">BL23 Taipei Nangang Exhibition Center</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineY__bg" label="Y Circular Line">
+                                <option _ngcontent-dnq-c26="" value="036">Y07 Dapinglin</option>
+                                <option _ngcontent-dnq-c26="" value="201">Y08 Shisizhang</option>
+                                <option _ngcontent-dnq-c26="" value="202">Y09 XiulangBridge</option>
+                                <option _ngcontent-dnq-c26="" value="203">Y10 Jingping</option>
+                                <option _ngcontent-dnq-c26="" value="047">Y11 Jingan</option>
+                                <option _ngcontent-dnq-c26="" value="205">Y12 Zhonghe</option>
+                                <option _ngcontent-dnq-c26="" value="206">Y13 Qiaohe</option>
+                                <option _ngcontent-dnq-c26="" value="207">Y14 Zhongyuan</option>
+                                <option _ngcontent-dnq-c26="" value="208">Y15 Banxin</option>
+                                <option _ngcontent-dnq-c26="" value="209">Y16 Banqiao</option>
+                                <option _ngcontent-dnq-c26="" value="210">Y17 Xinpu Minsheng</option>
+                                <option _ngcontent-dnq-c26="" value="123">Y18 Touqianzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="212">Y19 Xingfu</option>
+                                <option _ngcontent-dnq-c26="" value="213">Y20 New Taipei Industrial Park</option>
+                                <!---->
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group" style="margin-left:1rem">
+                        <label for="exampleFormControlSelect1">To:</label>
+                        <select class="form-control" id="exampleFormControlSelect2">
+                            <optgroup _ngcontent-dnq-c26="" class="lineBR__bg" label="BR Wenhu Line">
+                                <option _ngcontent-dnq-c26="" value="019">BR01 Taipei Zoo</option>
+                                <option _ngcontent-dnq-c26="" value="018">BR02 Muzha</option>
+                                <option _ngcontent-dnq-c26="" value="017">BR03 Wanfang Community</option>
+                                <option _ngcontent-dnq-c26="" value="016">BR04 Wanfang Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="015">BR05 Xinhai</option>
+                                <option _ngcontent-dnq-c26="" value="014">BR06 Linguang</option>
+                                <option _ngcontent-dnq-c26="" value="013">BR07 Liuzhangli</option>
+                                <option _ngcontent-dnq-c26="" value="012">BR08 Technology Building</option>
+                                <option _ngcontent-dnq-c26="" value="011">BR09 Daan</option>
+                                <option _ngcontent-dnq-c26="" value="010">BR10 Zhongxiao Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="009">BR11 Nanjing Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="008">BR12 Zhongshan Junior High School</option>
+                                <option _ngcontent-dnq-c26="" value="007">BR13 Songshan Airport</option>
+                                <option _ngcontent-dnq-c26="" value="021">BR14 Dazhi</option>
+                                <option _ngcontent-dnq-c26="" value="022">BR15 Jiannan Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="023">BR16 Xihu</option>
+                                <option _ngcontent-dnq-c26="" value="024">BR17 Gangqian</option>
+                                <option _ngcontent-dnq-c26="" value="025">BR18 Wende</option>
+                                <option _ngcontent-dnq-c26="" value="026">BR19 Neihu</option>
+                                <option _ngcontent-dnq-c26="" value="027">BR20 Dahu Park</option>
+                                <option _ngcontent-dnq-c26="" value="028">BR21 Huzhou</option>
+                                <option _ngcontent-dnq-c26="" value="029">BR22 Donghu</option>
+                                <option _ngcontent-dnq-c26="" value="030">BR23 Nangang Software Park</option>
+                                <option _ngcontent-dnq-c26="" value="031">BR24 Taipei Nangang Exhibition Center</option>
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineR__bg" label="R Tamsui-Xinyi Line">
+                                <option _ngcontent-dnq-c26="" value="099">R02 Xiangshan</option>
+                                <option _ngcontent-dnq-c26="" value="100">R03 Taipei 101/World Trade Center</option>
+                                <option _ngcontent-dnq-c26="" value="101">R04 Xinyi Anhe</option>
+                                <option _ngcontent-dnq-c26="" value="011">R05 Daan</option>
+                                <option _ngcontent-dnq-c26="" value="103">R06 Daan Park</option>
+                                <option _ngcontent-dnq-c26="" value="134">R07 Dongmen</option>
+                                <option _ngcontent-dnq-c26="" value="042">R08 C.K.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="050">R09 NTU Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="051">R10 Taipei Main Station</option>
+                                <option _ngcontent-dnq-c26="" value="053">R11 Zhongshan</option>
+                                <option _ngcontent-dnq-c26="" value="054">R12 Shuanglian</option>
+                                <option _ngcontent-dnq-c26="" value="055">R13 Minquan W. Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="056">R14 Yuanshan</option>
+                                <option _ngcontent-dnq-c26="" value="057">R15 Jiantan</option>
+                                <option _ngcontent-dnq-c26="" value="058">R16 Shilin</option>
+                                <option _ngcontent-dnq-c26="" value="059">R17 Zhishan</option>
+                                <option _ngcontent-dnq-c26="" value="060">R18 Mingde</option>
+                                <option _ngcontent-dnq-c26="" value="061">R19 Shipai</option>
+                                <option _ngcontent-dnq-c26="" value="062">R20 Qilian</option>
+                                <option _ngcontent-dnq-c26="" value="063">R21 Qiyan</option>
+                                <option _ngcontent-dnq-c26="" value="064">R22 Beitou</option>
+                                <option _ngcontent-dnq-c26="" value="065">R22A Xinbeitou</option>
+                                <option _ngcontent-dnq-c26="" value="066">R23 Fuxinggang</option>
+                                <option _ngcontent-dnq-c26="" value="067">R24 Zhongyi</option>
+                                <option _ngcontent-dnq-c26="" value="068">R25 Guandu</option>
+                                <option _ngcontent-dnq-c26="" value="069">R26 Zhuwei</option>
+                                <option _ngcontent-dnq-c26="" value="070">R27 Hongshulin</option>
+                                <option _ngcontent-dnq-c26="" value="071">R28 Tamsui</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineG__bg" label="G Songshan-Xindian Line">
+                                <option _ngcontent-dnq-c26="" value="033">G01 Xindian</option>
+                                <option _ngcontent-dnq-c26="" value="034">G02 Xindian District Office</option>
+                                <option _ngcontent-dnq-c26="" value="035">G03 Qizhang</option>
+                                <option _ngcontent-dnq-c26="" value="032">G03A Xiaobitan</option>
+                                <option _ngcontent-dnq-c26="" value="036">G04 Dapinglin</option>
+                                <option _ngcontent-dnq-c26="" value="037">G05 Jingmei</option>
+                                <option _ngcontent-dnq-c26="" value="038">G06 Wanlong</option>
+                                <option _ngcontent-dnq-c26="" value="039">G07 Gongguan</option>
+                                <option _ngcontent-dnq-c26="" value="040">G08 Taipower Building</option>
+                                <option _ngcontent-dnq-c26="" value="041">G09 Guting</option>
+                                <option _ngcontent-dnq-c26="" value="042">G10 C.K.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="043">G11 Xiaonanmen</option>
+                                <option _ngcontent-dnq-c26="" value="086">G12 Ximen</option>
+                                <option _ngcontent-dnq-c26="" value="105">G13 Beimen</option>
+                                <option _ngcontent-dnq-c26="" value="053">G14 Zhongshan</option>
+                                <option _ngcontent-dnq-c26="" value="132">G15 Songjiang Nanjing</option>
+                                <option _ngcontent-dnq-c26="" value="009">G16 Nanjing Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="109">G17 Taipei Arena</option>
+                                <option _ngcontent-dnq-c26="" value="110">G18 Nanjing Sanmin</option>
+                                <option _ngcontent-dnq-c26="" value="111">G19 Songshan</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineO__bg" label="O Zhonghe-Xinlu Line">
+                                <option _ngcontent-dnq-c26="" value="048">O01 Nanshijiao</option>
+                                <option _ngcontent-dnq-c26="" value="047">O02 Jingan</option>
+                                <option _ngcontent-dnq-c26="" value="046">O03 Yongan Market</option>
+                                <option _ngcontent-dnq-c26="" value="045">O04 Dingxi</option>
+                                <option _ngcontent-dnq-c26="" value="041">O05 Guting</option>
+                                <option _ngcontent-dnq-c26="" value="134">O06 Dongmen</option>
+                                <option _ngcontent-dnq-c26="" value="089">O07 Zhongxiao Xinsheng</option>
+                                <option _ngcontent-dnq-c26="" value="132">O08 Songjiang Nanjing</option>
+                                <option _ngcontent-dnq-c26="" value="131">O09 Xingtian Temple </option>
+                                <option _ngcontent-dnq-c26="" value="130">O10 Zhongshan Elementary School</option>
+                                <option _ngcontent-dnq-c26="" value="055">O11 Minquan W. Rd.</option>
+                                <option _ngcontent-dnq-c26="" value="128">O12 Daqiaotou</option>
+                                <option _ngcontent-dnq-c26="" value="127">O13 Taipei Bridge</option>
+                                <option _ngcontent-dnq-c26="" value="126">O14 Cailiao</option>
+                                <option _ngcontent-dnq-c26="" value="125">O15 Sanchong</option>
+                                <option _ngcontent-dnq-c26="" value="124">O16 Xianse Temple</option>
+                                <option _ngcontent-dnq-c26="" value="123">O17 Touqianzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="122">O18 Xinzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="121">O19 Fu Jen University</option>
+                                <option _ngcontent-dnq-c26="" value="180">O20 Danfeng</option>
+                                <option _ngcontent-dnq-c26="" value="179">O21 Huilong</option>
+                                <option _ngcontent-dnq-c26="" value="178">O50 Sanchong Elementary School</option>
+                                <option _ngcontent-dnq-c26="" value="177">O51 Sanhe Junior High School</option>
+                                <option _ngcontent-dnq-c26="" value="176">O52 St. Ignatius High School</option>
+                                <option _ngcontent-dnq-c26="" value="175">O53 Sanmin Senior High School</option>
+                                <option _ngcontent-dnq-c26="" value="174">O54 Luzhou</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineBL__bg" label="BL Bannan Line">
+                                <option _ngcontent-dnq-c26="" value="076">BL01 Dingpu</option>
+                                <option _ngcontent-dnq-c26="" value="077">BL02 Yongning</option>
+                                <option _ngcontent-dnq-c26="" value="078">BL03 Tucheng</option>
+                                <option _ngcontent-dnq-c26="" value="079">BL04 Haishan</option>
+                                <option _ngcontent-dnq-c26="" value="080">BL05 Far Eastern Hospital</option>
+                                <option _ngcontent-dnq-c26="" value="081">BL06 Fuzhong</option>
+                                <option _ngcontent-dnq-c26="" value="082">BL07 Banqiao</option>
+                                <option _ngcontent-dnq-c26="" value="083">BL08 Xinpu</option>
+                                <option _ngcontent-dnq-c26="" value="084">BL09 Jiangzicui</option>
+                                <option _ngcontent-dnq-c26="" value="085">BL10 Longshan Temple</option>
+                                <option _ngcontent-dnq-c26="" value="086">BL11 Ximen</option>
+                                <option _ngcontent-dnq-c26="" value="051">BL12 Taipei Main Station</option>
+                                <option _ngcontent-dnq-c26="" value="088">BL13 Shandao Temple</option>
+                                <option _ngcontent-dnq-c26="" value="089">BL14 Zhongxiao Xinsheng</option>
+                                <option _ngcontent-dnq-c26="" value="010">BL15 Zhongxiao Fuxing</option>
+                                <option _ngcontent-dnq-c26="" value="091">BL16 Zhongxiao Dunhua</option>
+                                <option _ngcontent-dnq-c26="" value="092">BL17 S.Y.S. Memorial Hall</option>
+                                <option _ngcontent-dnq-c26="" value="093">BL18 Taipei City Hall</option>
+                                <option _ngcontent-dnq-c26="" value="094">BL19 Yongchun</option>
+                                <option _ngcontent-dnq-c26="" value="095">BL20 Houshanpi</option>
+                                <option _ngcontent-dnq-c26="" value="096">BL21 Kunyang</option>
+                                <option _ngcontent-dnq-c26="" value="097">BL22 Nangang</option>
+                                <option _ngcontent-dnq-c26="" value="031">BL23 Taipei Nangang Exhibition Center</option>
+                                <!---->
+                            </optgroup>
+                            <optgroup _ngcontent-dnq-c26="" class="lineY__bg" label="Y Circular Line">
+                                <option _ngcontent-dnq-c26="" value="036">Y07 Dapinglin</option>
+                                <option _ngcontent-dnq-c26="" value="201">Y08 Shisizhang</option>
+                                <option _ngcontent-dnq-c26="" value="202">Y09 XiulangBridge</option>
+                                <option _ngcontent-dnq-c26="" value="203">Y10 Jingping</option>
+                                <option _ngcontent-dnq-c26="" value="047">Y11 Jingan</option>
+                                <option _ngcontent-dnq-c26="" value="205">Y12 Zhonghe</option>
+                                <option _ngcontent-dnq-c26="" value="206">Y13 Qiaohe</option>
+                                <option _ngcontent-dnq-c26="" value="207">Y14 Zhongyuan</option>
+                                <option _ngcontent-dnq-c26="" value="208">Y15 Banxin</option>
+                                <option _ngcontent-dnq-c26="" value="209">Y16 Banqiao</option>
+                                <option _ngcontent-dnq-c26="" value="210">Y17 Xinpu Minsheng</option>
+                                <option _ngcontent-dnq-c26="" value="123">Y18 Touqianzhuang</option>
+                                <option _ngcontent-dnq-c26="" value="212">Y19 Xingfu</option>
+                                <option _ngcontent-dnq-c26="" value="213">Y20 New Taipei Industrial Park</option>
+                                <!---->
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group"
+                        style="justify-content: center; align-items: center; margin-top: 1.5rem;">
+                        <input type="submit" name="r" class="btn btn-primary2 btn-default" value="Find my route!">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="center, extrapadding">
+        <h2 class="bottompadding">TRAVEL TO</h2>
+        <div class="flex-container">
+            <div> <img class="image-prov" src="maokong.png">
+                <a href="#" , class = "travellink">
+                    <h3>Maokong Gondola →</h3>
+                </a>
+            </div>
+            <div> <img class="image-prov" src="taipeiarena.png">
+                <a href="#" , class = "travellink">
+                    <h3>Taipei Arena →</h3>
+                </a>
+            </div>
+            <div> <img class="image-prov" src="amusementpark.png">
+                <a href="#" , class = "travellink">
+                    <h3>Amusement Park →</h3>
+                </a>
+            </div>
+            <div> <img class="image-prov" src="beitouresort.png">
+                <a href="#" , class = "travellink">
+                    <h3>Beitou Resort →</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #e2edf39f;">
+        <h2 class="bottompadding" , style="padding-top: 4rem; padding-bottom: 4rem;">NEWS & NOTIFICATIONS</h2>
+        <div class="flex-container">
+            <div>
+                <div class="flex-container-vert">
+                    <div><a href="#" class = "newslink">
+                            <p class="newsfont"><b>2020-10-05</b>: TRTC Expands New Takeout Business to MRT
+                                Taipei 101 Station</p>
+                        </a></div>
+                    <div><a href="#" class = "newslink">
+                            <p class="newsfont"><b>2020-09-28</b>: TRTC Completes Overhaul of MRT Station
+                                Escalators</p>
+                        </a></div>
+                    <div><a href="#" class = "newslink">
+                            <p class="newsfont"><b>2020-08-20</b>: TRTC Holds Exchange Banquet, Welcomes Kids
+                                from Hualian and Eastern Taiwan</p>
+                        </a></div>
+                </div>
+
+            </div>
+            <div>
+                <div id="carousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" style="overflow: hidden; width:360px; border-radius: 5px 5px 5px 5px;">
+                        <div class="carousel-item active">
+                            <img src="1.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="2.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="3.png">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <img class="taipeiimg" src="taipeitrain.png">
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark"
+        style="background-color: rgb(15, 37, 99); padding-top: 1rem; color: white">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold" style="color:tomato">About</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class = "footerlink">Company History & Mission</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Network & Systems</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Officials & Administration</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Statistics & Publications</a>
+                    </p>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="color:tomato">Useful Links & FAQ</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class = "footerlink">Bike & Pet Policies</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Privacy & Security Policy</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Lost & Found</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Station Shops Information</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="color:tomato">Application Services</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="#!" class = "footerlink">TRTC Departmental Contacts</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Regulations</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Employment Opportunities</a>
+                    </p>
+                    <p>
+                        <a href="#!" class = "footerlink">Application Items</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold" style="color:tomato">Contact</h6>
+                    <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3" aria-hidden="true"> </i>Taipei City, Taiwan, 104216</p>
+                    <p>
+                        <i class="fa fa-question-circle mr-3" aria-hidden="true"></i> <a href="#!"class = "footerlink">Feedback Survey</a></p>
+                    <p>
+                        <i class="fa fa-phone mr-3" aria-hidden="true"></i> + 886 2272 08889</p>
+                    <p>
+                        <a href="#!"class = "footerlink"><i class="fa fa-facebook-square mr-3" aria-hidden="true"></i></a>
+                        <a href="#!"class = "footerlink"><i class="fa fa-envelope mr-3" aria-hidden="true"></i></a>
+                        <a href="#!"class = "footerlink"><i class="fa fa-twitter mr-3" aria-hidden="true"></i></a>
+                        <a href="#!"class = "footerlink"><i class="fa fa-qrcode mr-3" aria-hidden="true"></i></a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,28 +1,38 @@
-/* font-family: 'Abril Fatface', cursive;
-font-family: 'Bebas Neue', cursive;
-font-family: 'Playfair Display', serif; */
+
 
 .title {
     font-size: 400%;
     color: navy;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
 }
 
-.h2 {
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h2 {
     font-size: 200%;
+    color:black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 0%;
+}
+
+h3 {
+    font-size: 140%;
     color:navy;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-top: 0%;
 }
 
 .paragraph {
-    font-family: 'Playfair Display', serif;
-    color: rgb(75, 49, 29);
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
     font-size: 100%;
     text-align: center;
     margin-left: 15%;
@@ -30,8 +40,6 @@ font-family: 'Playfair Display', serif; */
 }
 
 .paragraphleft {
-    font-family: 'Playfair Display', serif;
-    color: rgb(75, 49, 29);
     font-size: 100%;
     margin-left: 15%;
     margin-right: 15%;
@@ -39,8 +47,6 @@ font-family: 'Playfair Display', serif; */
 }
 
 .lists {
-    font-family: 'Playfair Display', serif;
-    color: rgb(75, 49, 29);
     font-size: 100%;
     margin-left: 20%;
     margin-right: 20%;

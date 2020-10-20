@@ -1,0 +1,164 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+h2 {
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    padding-top: 0%;
+    font-size: 250%;
+    color: #000080;
+}
+
+h3 {
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.newsfont {
+    background-color: #f5c57e49;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+.image-prov {
+    height: auto;
+    width: 220px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.bottompadding {
+    padding-bottom: 4%;
+}
+
+.extrapadding {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.flex-container-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.overf {
+    overflow: hidden;
+}
+
+.btn-primary {
+    color: tomato;
+    background-color: white;
+    border-color: tomato;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: white;
+    background-color: tomato;
+    border-color: white;
+}
+
+.btn-primary2 {
+    color: white;
+    background-color: tomato;
+    border-color: tomato;
+}
+
+.btn-primary2:hover, .btn-primary2:focus, .btn-primary2:active, .btn-primary2.active, .open>.dropdown-toggle.btn-primary2 {
+    color: tomato;
+    background-color: white;
+    border-color: tomato;
+}
+
+
+
+.navbar-light .nav-item:hover .nav-link {
+    color: tomato;
+}
+
+.navigationlink {
+    color: white
+}
+
+.navigationlink:hover {
+    color: tomato;
+}
+
+.travellink {
+    color: black
+}
+
+.travellink:hover {
+    color: #ff6347;
+}
+
+.newslink {
+    color: navy
+}
+
+.newslink:hover {
+    color: rgb(255, 99, 71);
+}
+
+.footerlink {
+    color: white
+}
+
+.footerlink:hover {
+    color: tomato;
+}
+
+.taipeiimg {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 500px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 501px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .vertical-center {
+        min-height: 100%;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 50px;
+        top: -630px;
+        width: 100%;
+    }
+}
